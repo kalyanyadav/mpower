@@ -160,7 +160,19 @@
     <li class="col-md-2 col-sm-4"><a href="<?php echo base_url('search/columbus');?>" title="Jobs in Columbus">Columbus</a></li>
     <li class="col-md-2 col-sm-4"><a href="<?php echo base_url('search/boston');?>" title="Jobs in Boston">Boston</a></li>
     <li class="col-md-2 col-sm-4"><a href="<?php echo base_url('search/washington');?>" title="Jobs in Washington">Washington</a></li>
-    <li class="col-md-2 col-sm-4"><a href="<?php echo base_url('search/las-vegas');?>" title="Jobs in Las Vegas">Las Vegas</a></li>    
+    <li class="col-md-2 col-sm-4"><a href="<?php echo base_url('search/las-vegas');?>" title="Jobs in Las Vegas">Las Vegas</a></li> 
+    <li class="col-md-2 col-sm-4"><a href="<?php echo base_url('search/new-york');?>" title="Jobs in New York">New York</a></li>
+    <li class="col-md-2 col-sm-4"><a href="<?php echo base_url('search/los-angeles');?>" title="Jobs in 	Los Angeles">Los Angeles</a></li>
+    <li class="col-md-2 col-sm-4"><a href="<?php echo base_url('search/chicago');?>" title="Jobs in Chicago">Chicago</a></li>
+    <li class="col-md-2 col-sm-4"><a href="<?php echo base_url('search/houston');?>" title="Jobs in Houston">Houston</a></li>
+    <li class="col-md-2 col-sm-4"><a href="<?php echo base_url('search/san-diego');?>" title="Jobs in San Diego">San Diego</a></li>
+    <li class="col-md-2 col-sm-4"><a href="<?php echo base_url('search/san-jose');?>" title="Jobs in San Jose">San Jose</a></li>
+    <li class="col-md-2 col-sm-4"><a href="<?php echo base_url('search/austin');?>" title="Jobs in Austin">Austin</a></li>
+    <li class="col-md-2 col-sm-4"><a href="<?php echo base_url('search/san-francisco');?>" title="Jobs in San Francisco"> San Francisco</a></li>
+    <li class="col-md-2 col-sm-4"><a href="<?php echo base_url('search/columbus');?>" title="Jobs in Columbus">Columbus</a></li>
+    <li class="col-md-2 col-sm-4"><a href="<?php echo base_url('search/boston');?>" title="Jobs in Boston">Boston</a></li>
+    <li class="col-md-2 col-sm-4"><a href="<?php echo base_url('search/washington');?>" title="Jobs in Washington">Washington</a></li>
+    <li class="col-md-2 col-sm-4"><a href="<?php echo base_url('search/las-vegas');?>" title="Jobs in Las Vegas">Las Vegas</a></li> 
   </ul>
 </div>
 </div>

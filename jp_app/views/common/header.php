@@ -3,7 +3,7 @@
         <div class="col-md-2">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-            <a class="navbar-brand" href="<?php echo base_url();?>" title="Mpower jobs"><img src="<?php echo base_url('public/images/logo.png');?>" alt="USA jobs website" /></a> </div>
+            <a class="navbar-brand" style="margin-top:-20px;" href="<?php echo base_url();?>" title="Mpower jobs"><img src="<?php echo base_url('public/images/logo.png');?>" alt="USA jobs website" /></a> </div>
         </div>
         <div class="col-md-<?php echo ($this->session->userdata('is_user_login')==TRUE)?'6':'6';?>">
           <div class="navbar-collapse collapse">

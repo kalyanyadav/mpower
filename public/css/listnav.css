@@ -4,7 +4,10 @@
 
 .listNavHide { display: none }
 
-.listNavShow { display: list-item; width:31.6%; min-height: 70PX; }
+.listNavShow { 
+    display: list-item; 
+    width:24%; 
+    min-height: 70PX; }
 
 .letterCountShow { display: block }
 
@@ -13,7 +16,7 @@
   display: block;
   color:#fff;
   float: left;
-  padding: 5px 0.714em;
+  padding: 6px 16.21px;
   border: 1px solid #fff;
   border-right: none;
   text-decoration: none
@@ -21,9 +24,9 @@
 
 .ln-letters .ln-last { border-right: 1px solid silver }
 
-.ln-letters a:hover { background-color: ##7f38e0; color#ffffff; }
-.ln-letters { background-color: #1ba6df; color#ffffff; }
-.ln-selected { background-color: #7f38e0; color#ffffff; }
+.ln-letters a:hover {background-color:#7f38e0; color:#fff;}
+.ln-letters {background-color:#1ba6df; color:#fff;}
+.ln-selected {background-color:#7f38e0; color:#fff;}
 
 .ln-letters .ln-disabled { color: #fff }
 

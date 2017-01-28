@@ -18,10 +18,10 @@
 <div class="container detailinfo">
   
       <div class="row"> 
-        <div class="col-md-4 col-sm-6">
+        <!--div class="col-md-4 col-sm-6">
         
         <!--Company Info-->       
-          <div class="companyinfoWrp">            
+          <!--div class="companyinfoWrp">            
               Sidebar
             
             <div class="clear"></div>
@@ -29,15 +29,15 @@
         
         <!--Apply-->        
         <?php if($this->session->userdata('is_user_login')!=TRUE): ?>
-        <div class="actionBox">
+        <!--div class="actionBox">
           <h4>Become a Member</h4>
           <p>Click on Login if you are already member.</p>
           <a href="<?php echo base_url('jobseeker-signup');?>" class="applyjob"><span>Register</span></a> <a href="<?php echo base_url('login');?>" class="refferbtn"><span>Login</span></a> </div>
         <?php endif;?>        
-        </div>
+        </div-->
         
         
-        <div class="col-md-8 col-sm-6">        
+        <div class="col-md-12 col-sm-6">        
         <!--Job Detail-->      
 		  <?php if($row_company->company_description):?>
           <div class="boxwraper">
