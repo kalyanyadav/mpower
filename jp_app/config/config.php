@@ -13,7 +13,7 @@
 | path to your installation.
 |
 */
-$config['base_url']	= 'http://localhost/mpower/';
+$config['base_url']	= 'http://localhost:8080/mpower/';
 /*
 |--------------------------------------------------------------------------
 | Index File

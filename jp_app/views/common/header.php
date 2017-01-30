@@ -3,9 +3,9 @@
         <div class="col-md-2">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-            <a class="navbar-brand" style="margin-top:-20px;" href="<?php echo base_url();?>" title="Mpower jobs"><img src="<?php echo base_url('public/images/logo.png');?>" alt="USA jobs website" /></a> </div>
+            <a class="navbar-brand" style="margin-top:-10px;" href="<?php echo base_url();?>" title="Mpower jobs"><img src="<?php echo base_url('public/images/logo.png');?>" alt="USA jobs website" /></a> </div>
         </div>
-        <div class="col-md-<?php echo ($this->session->userdata('is_user_login')==TRUE)?'6':'6';?>">
+        <div class="col-md-<?php echo ($this->session->userdata('is_user_login')==TRUE)?'7':'7';?>">
           <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-left">
               <?php 
@@ -37,12 +37,12 @@
         </div>
         <!--/.nav-collapse -->
         
-        <div class="col-md-<?php echo ($this->session->userdata('is_user_login')==TRUE)?'4':'4';?>">
+        <div class="col-md-<?php echo ($this->session->userdata('is_user_login')==TRUE)?'3':'3';?>">
           <div class="usertopbtn">
 		  <?php if($this->session->userdata('is_user_login')!=TRUE): ?>          
           <a href="<?php echo base_url('employer-signup');?>" class="lookingbtn">Employeer</a>
           <a href="<?php echo base_url('jobseeker-signup');?>" class="hiringbtn">Job Seeker</a>
-          <a href="<?php echo base_url('login');?>" class="loginBtn" title="Jobs openings">Login</a>
+          <!--a href="<?php //echo base_url('login');?>" class="loginBtn" title="Jobs openings">Login</a-->
           <?php else:
 			 $c_folder = ($this->session->userdata('is_employer')==TRUE)?'employer':'jobseeker';
 		   ?>
