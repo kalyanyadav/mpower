@@ -18,7 +18,7 @@ class Home extends CI_Controller {
 		$total_posted_jobs 	= $this->posted_jobs_model->record_count('pp_post_jobs');
 		
 		//Top employer section
-		$top_employer_result= $this->employers_model->get_all_active_top_employers(12, 0);
+		$top_employer_result= $this->employers_model->get_all_active_top_employers(10, 0);
 		$total_employers 	= $this->employers_model->record_count('pp_employers');
 		
 		//Feature jobs

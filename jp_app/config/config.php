@@ -24,7 +24,7 @@ $config['base_url']	= 'http://localhost:8080/mpower/';
 | variable so that it is blank.
 |
 */
-$config['index_page'] = 'index.php';
+$config['index_page'] = '';
 /*
 |--------------------------------------------------------------------------
 | URI PROTOCOL

@@ -307,12 +307,11 @@ margin-bottom: 20px;
 	margin: 0;
 	overflow: hidden;
 	text-align: center;
-	border-radius: 50%;
-	width: 60px;
-	height: 60px;
+	margin-right: 5px;
+        height: 50px;
 }
 .latestjobs .joblist .thumbnail img {
-	border-radius: 50%;
+	
 }
 .latestjobs .joblist .col-md-12 .intlist:hover .thumbnail {
 	border: 1px solid #999;
@@ -518,7 +517,7 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
 }
 .employersList li {
 	float: left;
-	width: 24%;
+	width: 19%;
 	height: 175px;
 	overflow: hidden;
 	border: 1px solid #ddd;
