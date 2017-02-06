@@ -77,7 +77,7 @@
     
     
     
-      <div class="bttxt">Copyright <?php echo date('Y');?>. © 2016 mpowerjobz.com All rights reserved.</div>
+      <div class="bttxt">Copyright  mpowerjobz.com © <?php echo date('Y');?>, All rights reserved. </div>
     </div>
   </div>
 </div>

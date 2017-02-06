@@ -24,6 +24,15 @@
 </div>
 <!--/Search Block--> 
 
+<!-- countries and browse jobs dive -->
+<div class="browse">
+<div class="container" style="color:#fff;">
+	<div class="col-md-10" style="padding:10px 0 0 0;">Browse JobsFinds Jobs in San Francisco, Palo Alto, Mountain View, Sacramento, New York, United Kindom, Asia Pacific</div>
+	<div class="col-md-2"><a href="#" class="btn btn-warning">Browse Jobs</a></div>
+</div>
+</div>
+<!-- countries and browse jobs dive -->
+
 <!--Featured Jobs-->      
 <div class="featuredWrap">
 <div class="container">
@@ -85,7 +94,7 @@
 
 <!-- Testimonials Block -->
 
-<div class="top-colSection">
+<div class="test-colSection">
   <div class="container">
     <div class="row">
       <?php $this->load->view('common/testimonials');?>
@@ -113,11 +122,11 @@
 				$job_title = ellipsize(humanize($row_latest_jobs->job_title),34,1);
 				$image_name = ($row_latest_jobs->company_logo)?$row_latest_jobs->company_logo:'no_logo.jpg';
 	  ?>
-            <li class="col-md-6">
+            <li class="col-md-4">
               <div class="intlist">
                 <div class="col-xs-2"><a href="<?php echo base_url('company/'.$row_latest_jobs->company_slug);?>" title="Jobs in <?php echo $row_latest_jobs->company_name;?>" class="thumbnail"><img src="<?php echo base_url('public/uploads/employer/thumb/'.$image_name);?>" alt="<?php echo base_url('company/'.$row_latest_jobs->company_slug);?>" /></a></div>
-                <div class="col-xs-6"> <a href="<?php echo base_url('jobs/'.$row_latest_jobs->job_slug);?>" class="jobtitle" title="<?php echo $row_latest_jobs->job_title;?>"><?php echo $job_title;?></a> <span><a href="<?php echo base_url('company/'.$row_latest_jobs->company_slug);?>" title="Jobs in <?php echo $row_latest_jobs->company_name;?>"><?php echo $row_latest_jobs->company_name;?></a> &nbsp;-&nbsp; <?php echo $row_latest_jobs->city;?></span> </div>
-                <div class="col-xs-4"> <a href="<?php echo base_url('jobs/'.$row_latest_jobs->job_slug.'?apply=yes');?>" class="applybtn" title="<?php echo $row_latest_jobs->industry_name.' Job in '.$row_latest_jobs->city;?>">Apply Now</a> </div>
+                <div class="col-xs-10"> <a href="<?php echo base_url('jobs/'.$row_latest_jobs->job_slug);?>" class="jobtitle" title="<?php echo $row_latest_jobs->job_title;?>"><?php echo $job_title;?></a> <span><a href="<?php echo base_url('company/'.$row_latest_jobs->company_slug);?>" title="Jobs in <?php echo $row_latest_jobs->company_name;?>"><?php echo $row_latest_jobs->company_name;?></a> &nbsp;-&nbsp; <?php echo $row_latest_jobs->city;?></span> </div>
+                <div class="col-xs-12"> <a href="<?php echo base_url('jobs/'.$row_latest_jobs->job_slug.'?apply=yes');?>" class="applybtn btn-block" title="<?php echo $row_latest_jobs->industry_name.' Job in '.$row_latest_jobs->city;?>">Apply Now</a> </div>
                 <div class="clear"></div>
               </div>
             </li>
@@ -149,30 +158,30 @@
 	<div class="titlebar"><h2>MpowerJobz Top Countries</h2>    </div>
     
   <ul class="citiesList row">
-    <li class="col-md-2 col-sm-4"><a href="<?php echo base_url('search/new-york');?>" title="Jobs in New York">New York</a></li>
-    <li class="col-md-2 col-sm-4"><a href="<?php echo base_url('search/los-angeles');?>" title="Jobs in 	Los Angeles">Los Angeles</a></li>
-    <li class="col-md-2 col-sm-4"><a href="<?php echo base_url('search/chicago');?>" title="Jobs in Chicago">Chicago</a></li>
-    <li class="col-md-2 col-sm-4"><a href="<?php echo base_url('search/houston');?>" title="Jobs in Houston">Houston</a></li>
-    <li class="col-md-2 col-sm-4"><a href="<?php echo base_url('search/san-diego');?>" title="Jobs in San Diego">San Diego</a></li>
-    <li class="col-md-2 col-sm-4"><a href="<?php echo base_url('search/san-jose');?>" title="Jobs in San Jose">San Jose</a></li>
-    <li class="col-md-2 col-sm-4"><a href="<?php echo base_url('search/austin');?>" title="Jobs in Austin">Austin</a></li>
-    <li class="col-md-2 col-sm-4"><a href="<?php echo base_url('search/san-francisco');?>" title="Jobs in San Francisco"> San Francisco</a></li>
-    <li class="col-md-2 col-sm-4"><a href="<?php echo base_url('search/columbus');?>" title="Jobs in Columbus">Columbus</a></li>
-    <li class="col-md-2 col-sm-4"><a href="<?php echo base_url('search/boston');?>" title="Jobs in Boston">Boston</a></li>
-    <li class="col-md-2 col-sm-4"><a href="<?php echo base_url('search/washington');?>" title="Jobs in Washington">Washington</a></li>
-    <li class="col-md-2 col-sm-4"><a href="<?php echo base_url('search/las-vegas');?>" title="Jobs in Las Vegas">Las Vegas</a></li> 
-    <li class="col-md-2 col-sm-4"><a href="<?php echo base_url('search/new-york');?>" title="Jobs in New York">New York</a></li>
-    <li class="col-md-2 col-sm-4"><a href="<?php echo base_url('search/los-angeles');?>" title="Jobs in 	Los Angeles">Los Angeles</a></li>
-    <li class="col-md-2 col-sm-4"><a href="<?php echo base_url('search/chicago');?>" title="Jobs in Chicago">Chicago</a></li>
-    <li class="col-md-2 col-sm-4"><a href="<?php echo base_url('search/houston');?>" title="Jobs in Houston">Houston</a></li>
-    <li class="col-md-2 col-sm-4"><a href="<?php echo base_url('search/san-diego');?>" title="Jobs in San Diego">San Diego</a></li>
-    <li class="col-md-2 col-sm-4"><a href="<?php echo base_url('search/san-jose');?>" title="Jobs in San Jose">San Jose</a></li>
-    <li class="col-md-2 col-sm-4"><a href="<?php echo base_url('search/austin');?>" title="Jobs in Austin">Austin</a></li>
-    <li class="col-md-2 col-sm-4"><a href="<?php echo base_url('search/san-francisco');?>" title="Jobs in San Francisco"> San Francisco</a></li>
-    <li class="col-md-2 col-sm-4"><a href="<?php echo base_url('search/columbus');?>" title="Jobs in Columbus">Columbus</a></li>
-    <li class="col-md-2 col-sm-4"><a href="<?php echo base_url('search/boston');?>" title="Jobs in Boston">Boston</a></li>
-    <li class="col-md-2 col-sm-4"><a href="<?php echo base_url('search/washington');?>" title="Jobs in Washington">Washington</a></li>
-    <li class="col-md-2 col-sm-4"><a href="<?php echo base_url('search/las-vegas');?>" title="Jobs in Las Vegas">Las Vegas</a></li> 
+    <li class="col-md-2 col-sm-4"><a href="<?php echo base_url('search/new-york');?>" title="Jobs in New York">Jobs in New York</a></li>
+    <li class="col-md-2 col-sm-4"><a href="<?php echo base_url('search/los-angeles');?>" title="Jobs in Los Angeles">Jobs in Los Angeles</a></li>
+    <li class="col-md-2 col-sm-4"><a href="<?php echo base_url('search/chicago');?>" title="Jobs in Chicago">Jobs in Chicago</a></li>
+    <li class="col-md-2 col-sm-4"><a href="<?php echo base_url('search/houston');?>" title="Jobs in Houston">Jobs in Houston</a></li>
+    <li class="col-md-2 col-sm-4"><a href="<?php echo base_url('search/san-diego');?>" title="Jobs in San Diego">Jobs in San Diego</a></li>
+    <li class="col-md-2 col-sm-4"><a href="<?php echo base_url('search/san-jose');?>" title="Jobs in San Jose">Jobs in San Jose</a></li>
+    <li class="col-md-2 col-sm-4"><a href="<?php echo base_url('search/austin');?>" title="Jobs in Austin">Jobs in Austin</a></li>
+    <li class="col-md-2 col-sm-4"><a href="<?php echo base_url('search/san-francisco');?>" title="Jobs in San Francisco">Jobs in San Francisco</a></li>
+    <li class="col-md-2 col-sm-4"><a href="<?php echo base_url('search/columbus');?>" title="Jobs in Columbus">Jobs in Columbus</a></li>
+    <li class="col-md-2 col-sm-4"><a href="<?php echo base_url('search/boston');?>" title="Jobs in Boston">Jobs in Boston</a></li>
+    <li class="col-md-2 col-sm-4"><a href="<?php echo base_url('search/washington');?>" title="Jobs in Washington">Jobs in Washington</a></li>
+    <li class="col-md-2 col-sm-4"><a href="<?php echo base_url('search/las-vegas');?>" title="Jobs in Las Vegas">Jobs in Las Vegas</a></li> 
+    <li class="col-md-2 col-sm-4"><a href="<?php echo base_url('search/new-york');?>" title="Jobs in New York">Jobs in New York</a></li>
+    <li class="col-md-2 col-sm-4"><a href="<?php echo base_url('search/los-angeles');?>" title="Jobs in Los Angeles">Jobs in Los Angeles</a></li>
+    <li class="col-md-2 col-sm-4"><a href="<?php echo base_url('search/chicago');?>" title="Jobs in Chicago">Jobs in Chicago</a></li>
+    <li class="col-md-2 col-sm-4"><a href="<?php echo base_url('search/houston');?>" title="Jobs in Houston">Jobs in Houston</a></li>
+    <li class="col-md-2 col-sm-4"><a href="<?php echo base_url('search/san-diego');?>" title="Jobs in San Diego">Jobs in San Diego</a></li>
+    <li class="col-md-2 col-sm-4"><a href="<?php echo base_url('search/san-jose');?>" title="Jobs in San Jose">Jobs in San Jose</a></li>
+    <li class="col-md-2 col-sm-4"><a href="<?php echo base_url('search/austin');?>" title="Jobs in Austin">Jobs in Austin</a></li>
+    <li class="col-md-2 col-sm-4"><a href="<?php echo base_url('search/san-francisco');?>" title="Jobs in San Francisco">Jobs in San Francisco</a></li>
+    <li class="col-md-2 col-sm-4"><a href="<?php echo base_url('search/columbus');?>" title="Jobs in Columbus">Jobs in Columbus</a></li>
+    <li class="col-md-2 col-sm-4"><a href="<?php echo base_url('search/boston');?>" title="Jobs in Boston">Jobs in Boston</a></li>
+    <li class="col-md-2 col-sm-4"><a href="<?php echo base_url('search/washington');?>" title="Jobs in Washington">Jobs in Washington</a></li>
+    <li class="col-md-2 col-sm-4"><a href="<?php echo base_url('search/las-vegas');?>" title="Jobs in Las Vegas">Jobs in Las Vegas</a></li> 
   </ul>
 </div>
 </div>

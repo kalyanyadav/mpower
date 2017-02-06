@@ -136,11 +136,28 @@ img {
 	color: #fff;
 }
 .top-colSection {
-	/*background: url(../images/search-bg.png) #fff no-repeat;*/
-        background: #432b5d;
+	background: url(../images/search.png) #432b5d no-repeat;
+    /*background: #432b5d;*/
 	padding: 55px 0;
-background-size:contain;
-margin-bottom: 20px;
+background-size:cover;
+/*margin-bottom: 20px;*/
+}
+.test-colSection {
+	background: url(../images/testimonial.png) #432b5d no-repeat;
+    /*background: #432b5d;*/
+	padding: 55px 0;
+background-size:cover;
+color:#fff;
+/*margin-bottom: 20px;*/
+}
+.test-colSection p{
+color:#fff;
+/*margin-bottom: 20px;*/
+}
+.test-colSection h1{
+font-size:14px;
+font-style:italic;
+/*margin-bottom: 20px;*/
 }
 .top-colSection h1, .top-colSection h2, .top-colSection h3, .top-colSection h4 {
 	font-family: 'Open Sans', 'sans-serif';
@@ -216,11 +233,31 @@ margin-bottom: 20px;
 	border-radius: 5px;
 }
 .top-colSection .btn:hover {
-	background: #7f38e0;
+	background: #f0ad4e;
 	text-decoration: none;
+	transition: [transition-property] [transition-duration] [transition-timing-function] [transition-delay];
 }
 .top-colSection .postjobbtn {
-	background: #1ba6df;
+	display: inline-block;
+    background: #fff;
+    padding: 20px 64px;
+    border-radius: 3px;
+    margin: 0 10px;
+    font: 900 14px/14px 'Roboto',sans-serif;
+    color: #222;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0 5px 5px rgba(0,0,0,0.15);
+    -webkit-box-shadow: 0 5px 5px rgba(0,0,0,0.15);
+    text-decoration: none;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 11;
+    text-decoration: none;
+    transition: all 0.3s ease-in;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    overflow: hidden;
+	/* background: #1ba6df;
 	padding: 14px 20px;
 	color: #fff;
 	font-size: 16px;
@@ -228,11 +265,12 @@ margin-bottom: 20px;
 	display: inline-block;
 	margin: 0;
 	border: none;
-	border-radius: 5px;
+	border-radius: 5px;*/
 }
 .top-colSection .postjobbtn:hover {
-	background: #7f38e0;
+	background: #f0ad4e;
 	text-decoration: none;
+	transition: [transition-property] [transition-duration] [transition-timing-function] [transition-delay];
 }
 .employersection .col-xs-10, .candidatesection .col-xs-10 {
 	padding-right: 0;
@@ -291,7 +329,7 @@ margin-bottom: 20px;
 	color: #777;
 }
 .latestjobs {
-	padding: 50px 0;
+	padding: 20px 0;
 }
 .latestjobs .joblist {
 	list-style: none;
@@ -308,7 +346,7 @@ margin-bottom: 20px;
 	overflow: hidden;
 	text-align: center;
 	margin-right: 5px;
-        height: 50px;
+        height: 43px;
 }
 .latestjobs .joblist .thumbnail img {
 	
@@ -368,6 +406,7 @@ margin-bottom: 20px;
 	margin-top: 30px;
 	border: 1px solid #eaeaea;
 	min-height: 104px;
+	height:140px;
 }
 .latestjobs .joblist li .intlist:hover {
 	box-shadow: 0 0 15px rgba(0,0,0,0.1);
@@ -492,10 +531,10 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
 }
 .titlebar {
 	text-align: center;
-	margin-bottom: 30px;
+	/*margin-bottom: 30px;*/
 }
 .titlebar h2 {
-	font-size: 40px;
+	font-size: 24px;
 	font-weight: 600;
 	margin: 0 0 10px 0
 }
@@ -518,7 +557,7 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
 .employersList li {
 	float: left;
 	width: 19%;
-	height: 175px;
+	height: 157px;
 	overflow: hidden;
 	border: 1px solid #ddd;
 	margin: 5px;
@@ -646,17 +685,17 @@ padding: 2px;
 /*Cities*/
 .citiesWrap {
 	background: #fff;
-	padding: 50px 0;
+	padding: 20px 0;
 }
 .citiesWrap .citiesList {
 	list-style: none;
 }
 .citiesWrap .citiesList li {
-	margin-top: 10px;
+	margin-top: 5px;
 }
 .citiesWrap .citiesList li a {
-	color: #333;
-	font-size: 18px;
+	color: #888;
+	font-size: 12px;
 	padding: 5px 0;
 }
 .citiesWrap .citiesList li a:hover {
@@ -664,10 +703,10 @@ padding: 2px;
 	color: #1ba6df;
 }
 .citiesWrap .citiesList li a:before {
-	content: '\f0da';
+	content: '\f0f7';
 	font-family: 'FontAwesome';
 	margin-right: 8px;
-	font-size: 20px;
+	font-size: 12px;
 }
 /*Featured*/
 .featuredWrap {
@@ -1562,7 +1601,7 @@ padding: 2px;
 .footerWrap {
 	background: #444;
 	padding: 40px 0 15px 0;
-	margin-top: 30px;
+	/*margin-top: 30px;*/
 }
 .footerWrap h5 {
 	font-size: 18px;
@@ -1768,4 +1807,35 @@ padding: 2px;
     font-size: 16px;
     text-decoration: none;
     cursor:pointer;
+}
+
+.banner-menu
+{
+float: left;
+    width: 100%;
+    margin: 0 0 30px 0;	
+	color:#fff;
+}
+.banner-menu ul {
+	padding: 0;
+    margin: 0;
+    display: block;
+    text-align: center;
+    list-style: none;
+}
+.banner-menu ul li {
+	padding: 0 16px;
+    display: inline-block;
+    position: relative;
+}
+.banner-menu ul li a{
+	font: 400 15px/15px 'Roboto',sans-serif;
+    color: #fff;
+    text-decoration: none;
+}
+.browse{
+	min-height:55px; 
+	padding:8px 0 0 0;  
+	width:100%; 
+	background:#2e114e;"
 }

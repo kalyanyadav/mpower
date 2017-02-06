@@ -3,10 +3,43 @@
 
   <div class="candidatesection">
   
+  <form action='http://localhost/mpower/index.php/search-jobs' METHOD='GET'>
+    <input type="hidden" name="indpubnum" value="4087572496810901">
+    
+    <table cellspacing='0' style='font-family: arial'>
+        
+        <tr>
+            <td><input name='q' value='' size='25'></td>
+            <td><input name='l' value='' size=''></td>
+            <td><input type='submit' value='Find Jobs'/></td>
+        </tr>
+        <tr>
+            <td valign='top' style='font-size: 10px'>job title, keywords or company</td>
+            <td colspan='2' valign='top' style='font-size: 10px; padding: 0; margin: 0; border: 0' >
+                <table cellpadding='0' width='100%' style='padding: 0; margin: 0; border: 0'>
+                    <tr>
+                        <td valign='top' style='font-size: 10px; padding: 0; margin: 0; border: 0'>city, state or pin</td>
+                        <td style='font-size: 13px' align='right'>
+                            <!--span id=indeed_at>
+                                <a title="Job Search" href="https://www.indeed.co.in/?indpubnum=4087572496810901" style="text-decoration: none; color: #000" rel="nofollow">
+                                    jobs by <img alt=Indeed src='https://www.indeed.com/p/jobsearch.gif' style='border: 0; vertical-align: middle'>
+                                </a>
+                            </span-->
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</form>
+                            
+  
+  
+  
   <h1>One million success stories. Start yours today.</h1>
   
   <?php echo form_open_multipart('job_search/search',array('name' => 'jsearch', 'id' => 'jsearch'));?>
-    <div class="col-md-5">
+    <div class="col-md-6">
           <input type="text" required name="job_params" id="job_params" class="form-control" placeholder="Job title or Skill" />                
     </div>
     
@@ -20,11 +53,13 @@
       </select>
     </div>
 
-    <div class="col-md-2">
+    <div class="col-md-1">
       <input type="submit" name="job_submit" class="btn" id="job_submit" value="Search"  />
     </div>
 <?php echo form_close();?> 
+
     <div class="clear"></div>
+	
   </div>
 
 
@@ -32,9 +67,21 @@
 
 
   <div class="employersection">   
+  <div class="banner-menu">
+<ul>
+<li><a href="#">San Francisco</a></li> |
+<li><a href="#">Palo Alto</a></li>|
+<li><a href="#">Mountain View</a></li>|
+<li><a href="#">Sacramento</a></li>|
+<li><a href="#">New York</a></li>|
+<li><a href="#">United Kindom</a></li>|
+<li><a href="#">Asia Pacific</a></li>
+</ul>
+</div>
       <!--h3>Get Started Now</h3-->
-      <a href="<?php echo base_url('employer/post_new_job');?>" class="postjobbtn" title="USA jobs">Post a Job</a>
-      <input type="submit" value="Upload Resume" title="job search engine USA" class="btn" alt="job search engine USA" onClick="document.location='<?php echo base_url('login');?>'" />
+      <a href="<?php echo base_url('employer/post_new_job');?>" class="postjobbtn" title="Post Job"><i class="fa fa-user"></i> Post a Job</a>
+	  <a href="<?php echo base_url('employer/post_new_job');?>" class="postjobbtn" title="Uplaod Resume" onClick="document.location='<?php echo base_url('login');?>'"><i class="fa fa-building-o"></i> Upload Resume</a>
+      <!--input type="submit" value="Upload Resume" title="job search engine USA" class="btn" alt="job search engine USA" onClick="document.location='<?php echo base_url('login');?>'" /-->
       <div class="clear"></div>
     </div>
 
@@ -57,10 +104,12 @@ if($this->session->userdata('is_employer')==TRUE): ?>
       <h1>New Company Get Started</h1>
       <a href="<?php echo base_url('employer/post_new_job');?>" class="postjobbtn" title="Post Jobs">Post a Job</a>
       <div class="clear"></div>
+	  
     </div>
     <div class="clear"></div>
   </div>
 </div>
+
 <?php else: ?>
 <div class="col-md-12">
   <div class="candidatesection">
@@ -81,11 +130,13 @@ if($this->session->userdata('is_employer')==TRUE): ?>
       <h3>Upload your resume</h3>
       <input type="submit" value="Upload Resume" title="job search " class="postjobbtn" alt="job search engine USA" onClick="document.location='<?php echo base_url('login');?>'" />
       </div>
+	  
       <div class="clear"></div>
     </div> 
     </div>
     <div class="clear"></div>
   </div>
 </div>
+
 <?php endif;?>
 <?php endif;?>
